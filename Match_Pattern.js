@@ -33,8 +33,8 @@ fetch(Sheet_url)
     //console.log(data);
     //console.log(data.table.rows[0].c[0].v);
 
-    let MyTeamsLength = data.table.rows.length;
-    for (let i = 0; i < MyTeamsLength / 2; i++) {
+    let myTeamsLength = data.table.rows.length;
+    for (let i = 0; i < myTeamsLength / 2; i++) {
       Group_1[i] = data.table.rows[i].c[0].v;
       Group_2[i] = data.table.rows[i + 4].c[0].v;
     }
@@ -63,6 +63,8 @@ fetch(Sheet_url)
         HomeTeam_result.value = "0";
         AwayTeam_result.value = "0";
 
+HomeTeam_result.id = "Group_1_Home_";
+AwayTeam_result.id = "Group_1_Away_";
         HomeTeam.id = "HomeTeam_Group1";
         AwayTeam.id = "AwayTeam_Group1";
 
@@ -84,12 +86,12 @@ fetch(Sheet_url)
       Home_team_div[4].textContent = Group_1[matchups[4][0]];
       Home_team_div[5].textContent = Group_1[matchups[5][0]];
 
-      Away_team_div[0].textContent = Group_1[matchups[0][0]];
-      Away_team_div[1].textContent = Group_1[matchups[1][0]];
-      Away_team_div[2].textContent = Group_1[matchups[2][0]];
-      Away_team_div[3].textContent = Group_1[matchups[3][0]];
-      Away_team_div[4].textContent = Group_1[matchups[4][0]];
-      Away_team_div[5].textContent = Group_1[matchups[5][0]];
+      Away_team_div[0].textContent = Group_1[matchups[0][1]];
+      Away_team_div[1].textContent = Group_1[matchups[1][1]];
+      Away_team_div[2].textContent = Group_1[matchups[2][1]];
+      Away_team_div[3].textContent = Group_1[matchups[3][1]];
+      Away_team_div[4].textContent = Group_1[matchups[4][1]];
+      Away_team_div[5].textContent = Group_1[matchups[5][1]];
     }
     {
       let container = document.getElementById("Container_group2");
@@ -115,7 +117,8 @@ fetch(Sheet_url)
 
         HomeTeam_result.value = "0";
         AwayTeam_result.value = "0";
-
+HomeTeam_result.id = "Group_2_Home_";
+AwayTeam_result.id = "Group_2_Away_";
         HomeTeam.id = "HomeTeam_Group2";
         AwayTeam.id = "AwayTeam_Group2";
 
@@ -137,11 +140,11 @@ fetch(Sheet_url)
       Home_team_div[4].textContent = Group_2[matchups[4][0]];
       Home_team_div[5].textContent = Group_2[matchups[5][0]];
 
-      Away_team_div[0].textContent = Group_2[matchups[0][0]];
-      Away_team_div[1].textContent = Group_2[matchups[1][0]];
-      Away_team_div[2].textContent = Group_2[matchups[2][0]];
-      Away_team_div[3].textContent = Group_2[matchups[3][0]];
-      Away_team_div[4].textContent = Group_2[matchups[4][0]];
-      Away_team_div[5].textContent = Group_2[matchups[5][0]];
+      Away_team_div[0].textContent = Group_2[matchups[0][1]];
+      Away_team_div[1].textContent = Group_2[matchups[1][1]];
+      Away_team_div[2].textContent = Group_2[matchups[2][1]];
+      Away_team_div[3].textContent = Group_2[matchups[3][1]];
+      Away_team_div[4].textContent = Group_2[matchups[4][1]];
+      Away_team_div[5].textContent = Group_2[matchups[5][1]];
     }
   });

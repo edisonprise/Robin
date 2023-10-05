@@ -2,6 +2,35 @@
     display: grid;
     grid-template-columns: 200px 30px 30px 200px;
 }
+.standingGroup1, .standingGroup2{
+    width: 250px;
+border: 1px black solid;
+border-radius: 3px;
+}
+.Grid_Groupstage{
+    width: 250px;
+        display: grid;
+    grid-template-columns: 200px 50px ;
+}
+
+.Header{
+    background-color: gray;
+    color: white;
+    padding: 2px;
+}
+
+.Grid_Groupstage:nth-child(even){
+background-color: rgb(220, 220, 220);
+}
+
+.Grid_Groupstage:nth-child(odd){
+background-color: rgb(192, 192, 192);
+}
+
+._value{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
 
 .AwayTeam{
     text-align: right;
