@@ -1,0 +1,12 @@
+.Grid_Class{
+    display: grid;
+    grid-template-columns: 200px 30px 30px 200px;
+}
+
+.AwayTeam{
+    text-align: right;
+}
+
+.Result{
+    text-align: center;
+}
