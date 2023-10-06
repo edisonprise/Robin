@@ -1,24 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
     <title>Robin</title>
-        <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
 
     <div id="Container_group1"></div>
     <br><br>
     <div id="Container_group2"></div>
-<br><br>
+    <br><br>
     <button id="Submit_Group">Submit Results</button>
     <br><br>
     <div id="standingGroup1"></div>
     <br><br>
     <div id="standingGroup2"></div>
     <br><br>
+<h3>Semifinals</h3>
+    <div id="semifinals">
+        <div class="match">
+            <div id="G1_1" class="Team_Name">G1 #1</div>
+            <input type="text" id="result_G1_1" value="0" placeholder="0" class="center_text result_class">
+            <input type="text" id="result_G2_2" value="0" placeholder="0" class="center_text result_class">
+            <div id="G2_2" class="Team_Name right_text">G2 #2</div>
+        </div>
+        <div class="match">
+            <div class="match">
+                <div id="G2_1" class="Team_Name">G2 #1</div>
+                <input type="text" id="result_G2_1" value="0" placeholder="0" class="center_text result_class2">
+                <input type="text" id="result_G1_2" value="0" placeholder="0" class="center_text result_class2">
+                <div id="G1_2" class="Team_Name right_text">G1 #2</div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <button id="submit_semi">Submit Semifinals</button>
+    <br><br>
+<h3>Finals</h3>
+    <div id="finals">
+    <div class="match">
+        <div id="Winner1" class="Team_Name2">Winner Match 1</div>
+        <input type="text" id="result_Winner1" value="0" placeholder="0" class="center_text">
+        <input type="text" id="result_Winner2" value="0" placeholder="0" class="center_text">
+        <div id="Winner2" class="Team_Name2 right_text">Winner Match 2</div>
+    </div>
+</div>
+</br>
+    <button id="submit_finals">Submit finals</button>
+    <br><br>
+
     <script src="Match_Pattern.js"></script>
     <script src="Point_System.js"></script>
+    <script src="Bracket_Results.js"></script>
 </body>
+
 </html>

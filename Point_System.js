@@ -79,7 +79,7 @@ function Submit_Group_Function() {
 
   console.log(All_Matches_Sort);
   let container = document.getElementById("standingGroup1");
-  container.innerHTML = ""
+  container.innerHTML = "";
 
   let div_grid = document.createElement("div");
   div_grid.className = "Grid_Groupstage";
@@ -98,23 +98,22 @@ function Submit_Group_Function() {
   div_grid.append(myheaderteamPoint);
 
   for (let x = 0; x < 4; x++) {
-  let div_grid_ = document.createElement("div");
-  div_grid_.className = "Grid_Groupstage";
+    let div_grid_ = document.createElement("div");
+    div_grid_.className = "Grid_Groupstage";
 
-  let myheaderteamname_ = document.createElement("div");
-  myheaderteamname_.textContent = All_Matches_Sort[x].teamName;
-  myheaderteamname_.className = "_value";
+    let myheaderteamname_ = document.createElement("div");
+    myheaderteamname_.textContent = All_Matches_Sort[x].teamName;
+    myheaderteamname_.className = "_value";
 
-  let myheaderteamPoint_ = document.createElement("div");
-  myheaderteamPoint_.textContent = All_Matches_Sort[x].total_points;
-  myheaderteamPoint_.className = "_value";
+    let myheaderteamPoint_ = document.createElement("div");
+    myheaderteamPoint_.textContent = All_Matches_Sort[x].total_points;
+    myheaderteamPoint_.className = "_value";
 
-  container.append(div_grid_);
+    container.append(div_grid_);
 
-  div_grid_.append(myheaderteamname_);
-  div_grid_.append(myheaderteamPoint_);
+    div_grid_.append(myheaderteamname_);
+    div_grid_.append(myheaderteamPoint_);
   }
- 
 }
 ///////////////////////////////////////////////////////////////////////
 let Submit_Group_2 = document.getElementById("Submit_Group");

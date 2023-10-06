@@ -1,8 +1,16 @@
-.Grid_Class{
+.Grid_Class, .match{
+    width: 460px;
     display: grid;
     grid-template-columns: 200px 30px 30px 200px;
 }
-.standingGroup1, .standingGroup2{
+
+#Container_group1,#Container_group2{
+    padding: 2px;
+    width: 460px;
+    border: 2px solid rgb(79, 79, 79);
+    background-color: rgb(43, 43, 43);
+}
+#standingGroup1, #standingGroup2{
     width: 250px;
 border: 1px black solid;
 border-radius: 3px;
@@ -36,6 +44,46 @@ background-color: rgb(192, 192, 192);
     text-align: right;
 }
 
+.right_text{
+text-align: right;
+}
+
+.center_text{
+    text-align: center;
+}
 .Result{
     text-align: center;
+}
+
+.Team, .Result{
+padding:2px;
+}
+
+.match{
+      padding-top: 4px;
+    padding:2px;  
+}
+
+.Grid_Class:nth-child(even),.match:nth-child(even){
+
+    background-color: rgb(142, 142, 142);
+}
+
+.Grid_Class:nth-child(odd),.match:nth-child(odd){
+
+    background-color: rgb(195, 195, 195);
+}
+
+.Grid_Groupstage:nth-of-type(2), .Grid_Groupstage:nth-of-type(3){
+    color: green;
+    font-weight: bold;
+}
+
+.Grid_Groupstage:nth-of-type(4), .Grid_Groupstage:nth-of-type(5){
+    color: rgb(128 0 0);
+    font-weight: bold;
+}
+
+.Grid_Groupstage:nth-of-type(3){
+border-bottom: 1px solid black;
 }
