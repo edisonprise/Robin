@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <link href="Bracket_style.css" rel="stylesheet">
+    <link href="extra_style.css" rel="stylesheet">
     <title>Robin</title>
 </head>
 
@@ -31,8 +33,8 @@
         <div class="match">
             <div class="match">
                 <div id="G2_1" class="Team_Name">G2 #1</div>
-                <input type="text" id="result_G2_1" value="0" placeholder="0" class="center_text result_class2">
-                <input type="text" id="result_G1_2" value="0" placeholder="0" class="center_text result_class2">
+                <input type="text" id="result_G2_1" value="0" placeholder="0" class="center_text result_class">
+                <input type="text" id="result_G1_2" value="0" placeholder="0" class="center_text result_class">
                 <div id="G1_2" class="Team_Name right_text">G1 #2</div>
             </div>
         </div>
@@ -45,14 +47,74 @@
     <div id="finals">
     <div class="match">
         <div id="Winner1" class="Team_Name2">Winner Match 1</div>
-        <input type="text" id="result_Winner1" value="0" placeholder="0" class="center_text">
-        <input type="text" id="result_Winner2" value="0" placeholder="0" class="center_text">
+        <input type="text" id="result_Winner1" value="0" placeholder="0" class="center_text result_class2">
+        <input type="text" id="result_Winner2" value="0" placeholder="0" class="center_text result_class2">
         <div id="Winner2" class="Team_Name2 right_text">Winner Match 2</div>
     </div>
 </div>
 </br>
     <button id="submit_finals">Submit finals</button>
     <br><br>
+    <!--------------------------------------------Bracket----------------->
+
+    <div class="Big_Grid">
+<div class="Bracket_Container_1">
+    <div class="Match_">
+        <div class="bracket_Input">0</div>
+        <div class="bracket_names">G1 #1</div>
+        <div class="bracket_Input">0</div>
+        <div class="bracket_names">G2 #2</div>
+    </div>
+    <div class="Match_">
+        <div class="bracket_Input">0</div>
+        <div class="bracket_names">G2 #1</div>
+        <div class="bracket_Input">0</div>
+        <div class="bracket_names">G1 #2</div>
+    </div>
+</div>
+<div class="Grid_Container_1">
+    <div class="Grid_box">
+        <div class="box">
+            <div class="three_lined_box"></div>
+        </div>
+        <div class="box">
+            <div class="one_lined_box"></div>
+        </div>
+    </div>
+    <div class="Grid_box">
+        <div class="box">
+            <div class="three_lined_box"></div>
+        </div>
+        <div class="box">
+            <div class="one_lined_box"></div>
+        </div>
+    </div>
+</div>
+<div class="Bracket_Container_2">
+    <div class="Match_">
+        <div class="bracket_Input_2">0</div>
+        <div class="bracket_names_2">Winner Match 1</div>
+        <div class="bracket_Input_2">0</div>
+        <div class="bracket_names_2">Winner Match 2</div>
+    </div>
+</div>
+<div class="Grid_Container_2">
+    <div class="Grid_box_2">
+        <div class="box_2">
+            <div class="three_lined_box_2"></div>
+        </div>
+        <div class="box_2">
+            <div class="one_lined_box_2"></div>
+        </div>
+    </div>
+</div>
+<div class="Bracket_Container_3">
+<div class="Match_3">
+    <div class="bracket_names_3">Winner Finals</div>
+</div>
+</div>
+    </div>
+    <br><br><br><br><br><br>
 
     <script src="Match_Pattern.js"></script>
     <script src="Point_System.js"></script>

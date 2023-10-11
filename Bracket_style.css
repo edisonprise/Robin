@@ -1,0 +1,136 @@
+.Big_Grid{
+    display: grid;
+    grid-template-columns: 190px 80px 190px 80px 150px;
+}
+
+/*---------------------Bracket Container 1---------------------*/
+.Bracket_Container_1{
+    margin-top: 20px;
+}
+.Match_{
+    width: 190px;
+    display: grid;
+    grid-template-columns: 40px 150px;
+    grid-template-rows: 60px 40px;
+}
+
+.bracket_Input{
+    height: 20px;
+    background-color:rgb(228, 228, 228) ;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.bracket_names{
+    text-align: center;
+    background-color: rgb(179, 179, 179);
+    border: 1px solid black;
+    height: 20px;
+}
+/*---------------------Grid Container 1------------------------*/
+.Grid_Container_1{
+    display: grid;
+    width: 80px;
+    grid-template-columns: 80px;
+}
+
+.Grid_box{
+    margin-top: 25px;
+    width: 80px;
+    display: grid;
+    grid-template-columns: 40px 40px;
+}
+
+.Grid_box:nth-of-type(2){
+    margin-top: 5px;
+}
+
+.box{
+    margin-top: 5px;
+}
+
+.three_lined_box{
+    border: 1px solid black;
+    height: 60px;
+    border-left: rgba(0, 0, 0, 0);
+}
+
+.one_lined_box{
+    border-bottom: 1px solid black;
+    height: 30px;
+}
+/*---------------------Bracket Container 2---------------------*/
+.Bracket_Container_2{
+    margin-top: 50px;
+}
+.Match_2{
+    width: 190px;
+    display: grid;
+    grid-template-columns: 40px 150px;
+    grid-template-rows: 100px 40px;
+}
+
+.bracket_Input_2{
+    height: 20px;
+    background-color:rgb(228, 228, 228) ;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.bracket_names_2{
+    text-align: center;
+    background-color: rgb(179, 179, 179);
+    border: 1px solid black;
+    height: 20px;
+}
+
+/*---------------------Grid Container 2------------------------*/
+.Grid_Container_2{
+    display: grid;
+    width: 80px;
+    grid-template-columns: 80px;
+}
+
+.Grid_box_2{
+    margin-top: 55px;
+    width: 80px;
+    display: grid;
+    grid-template-columns: 40px 40px;
+}
+
+.Grid_box_2:nth-of-type(2){
+    margin-top: 5px;
+}
+
+.box_2{
+    margin-top: 5px;
+}
+
+.three_lined_box_2{
+    border: 1px solid black;
+    height: 100px;
+    border-left: rgba(0, 0, 0, 0);
+}
+
+.one_lined_box_2{
+    border-bottom: 1px solid black;
+    height: 50px;
+}
+
+/*---------------------Bracket Container 3---------------------*/
+
+.Bracket_Container_3{
+    margin-top: 100px;
+}
+.Match_3{
+    width: 190px;
+    display: grid;
+    grid-template-columns: 150px;
+}
+
+.bracket_names_3{
+    text-align: center;
+    background-color: rgb(179, 179, 179);
+    border: 1px solid black;
+    height: 20px;
+}
